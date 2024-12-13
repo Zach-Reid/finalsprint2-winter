@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--Author: Zachary Reid. Assignment: Make a portfolio website for the semester 2 final sprint.-->
+<!--You're on the Customize page.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Edit the Page Yourself! - Customize</h1>
+        <nav class="flextop">
+
+                <a href="index.html">Home</a></li>
+                <a href="about.html">About</a></li>
+                <a href="gallery.html">Gallery</a></li>
+                <a href="customize.html">Customize</a></li>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="centerit">
+            <p>This is a special addition that updates the DOM, the Domain Object Model. Select a color and it'll update the DOM!</p>
+            </div>
+
+            <h2> Select the color here!</h2>
+            <div id="colorDisplay" class="colorbox">
+
+                <input type="color" id="colorPicker" value="#faebd7">
+                <b>This is the main color. Change this to change the box!</b>
+            <br> 
+                <input type="color" id="secondaryPicker" value="#000000">
+                <b>This is the secondary color. It will change the border color.</b>
+            <br>
+                <button id="submitColor">Submit Colors</button>
+            </div>
+
+            <div class="centerit">
+<br>    
+            <p>Kind of cool, right? Well, it's a lot more work than it seems to be. In the background, a lot of things work together just for this little box:</p> <br>
+            
+            <ul>
+                <li>The HTML file needs to read the script using the script tag. It also needs to hold the colorpickers and the submit button.</li>
+                <li>The CSS file has to actually make the box, telling the website just how big to make it and what the default look should be in case the colorpicker doesn't work.</li>
+                <li>The JS file does the heavy lifting when it comes to the DOM, registering the function, getting the element ID, and locally saving the colors that are picked when you click submit.</li>
+                <br><br>
+            </ul>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p> 2024, Portfolio by Zachary Reid. Created for a Keyin College final sprint.</p>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
